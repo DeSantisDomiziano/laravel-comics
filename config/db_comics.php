@@ -265,6 +265,14 @@ return [
         "DC Kids",
         "DC Universe",
         "DC Power Visa",
-    ]
+    ],
+
+    "socials" => [
+        "footer-facebook.png",
+        "footer-twitter.png",
+        "footer-youtube.png",
+        "footer-pinterest.png",
+        "footer-periscope.png",
+    ],
 ];
 

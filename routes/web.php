@@ -23,6 +23,7 @@ Route::get('/', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
       ];
 
@@ -45,8 +46,9 @@ Route::get('/characters', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('characters', $data);
 })->name('characters');
@@ -61,8 +63,9 @@ Route::get('/movies', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('movies', $data);
 })->name('movies');
@@ -77,8 +80,9 @@ Route::get('/tv', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('tv', $data);
 })->name('tv');
@@ -93,8 +97,9 @@ Route::get('/games', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('games', $data);
 })->name('games');
@@ -109,8 +114,9 @@ Route::get('/collectibles', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+    ];   
 
     return view('collectibles', $data);
 })->name('collectibles');
@@ -125,8 +131,9 @@ Route::get('/videos', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('videos', $data);
 })->name('videos');
@@ -141,8 +148,9 @@ Route::get('/fans', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('fans', $data);
 })->name('fans');
@@ -157,8 +165,9 @@ Route::get('/news', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('news', $data);
 })->name('news');
@@ -173,8 +182,9 @@ Route::get('/shop', function () {
             "shop" => config('db_comics.shop'),
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
+            "socials" => config('db_comics.socials'),
         ]
-    ];    
+      ];    
 
     return view('shop', $data);
 })->name('shop');

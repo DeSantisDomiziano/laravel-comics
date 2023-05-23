@@ -86,3 +86,17 @@ div.fs-5 {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#footer-bottom {
+    background-color: $footerBottom;
+
+    p {
+        vertical-align: sub;
+        font-size: 1.25rem;
+    }
+
+    img {
+        padding-left: 0.5rem;
+        max-width: 35px;
+    }
+}

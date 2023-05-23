@@ -16,9 +16,13 @@
 
 <body>
 
+    @include('partials.header')
+
     <h1>
         @yield('content')
     </h1>
+
+    @include('partials.header')
 
 </body>
 

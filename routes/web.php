@@ -14,221 +14,127 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+      $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+      ];
 
-    //dd($comics);
-    return view('comics', compact('comics', 'pages'));
+      /* foreach($data["pages"] as $page) {
+        var_dump($page);
+      };
+
+       dd($data);  */
+
+    return view('comics', $data);
 })->name('comics');
 
 Route::get('/characters', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('characters', compact('comics', 'pages'));
+    return view('characters', $data);
 })->name('characters');
 
 Route::get('/movies', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('movies', compact('comics', 'pages'));
+    return view('movies', $data);
 })->name('movies');
 
 Route::get('/tv', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('tv', compact('comics', 'pages'));
+    return view('tv', $data);
 })->name('tv');
 
 Route::get('/games', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('games', compact('comics', 'pages'));
+    return view('games', $data);
 })->name('games');
 
 Route::get('/collectibles', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('collectibles', compact('comics', 'pages'));
+    return view('collectibles', $data);
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('videos', compact('comics', 'pages'));
+    return view('videos', $data);
 })->name('videos');
 
 Route::get('/fans', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('fans', compact('comics', 'pages'));
+    return view('fans', $data);
 })->name('fans');
 
 Route::get('/news', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('news', compact('comics', 'pages'));
+    return view('news', $data);
 })->name('news');
 
 Route::get('/shop', function () {
-    $comics = config('db_comics');
-
     
-    $pages = [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-    ];
-        
+    $data = [
+        "keys" => [
+            "comics" => config('db_comics.comics'),
+            "pages" => config('db_comics.pages'),
+        ]
+    ];    
 
-    //dd($comics);
-    return view('shop', compact('comics', 'pages'));
+    return view('shop', $data);
 })->name('shop');

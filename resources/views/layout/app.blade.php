@@ -22,9 +22,9 @@
 
     @include('partials.header')
 
-    <h1>
+    <main>
         @yield('content')
-    </h1>
+    </main>
 
     @include('partials.footer')
 

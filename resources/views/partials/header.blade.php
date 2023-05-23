@@ -21,7 +21,7 @@
 
                 <div class="col-auto">
                     <ul class="list-unstyled d-flex gap-3 m-0 h-100 text-uppercase fw-bold">
-                        @foreach( $pages as $page)
+                        @foreach( $keys["pages"] as $page )
                             <li class="h-100 {{ Route::currentRouteName() === $page ? 'current' : ''}} d-flex justify-content-center align-items-center">
                                 <a href='{{route("$page")}}'>
                                     {{ $page }}

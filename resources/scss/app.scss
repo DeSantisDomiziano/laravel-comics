@@ -19,7 +19,7 @@ ul {
     list-style-type: none;
 }
 
-/* HEADER SECTION */
+/* ############ HEADER SECTION ############ */
 
 #top-header {
     background-color: $primary;
@@ -43,11 +43,26 @@ div.fs-5 {
     background-size: cover;
 }
 
-/* MAIN SECTION */
+/* ############ MAIN SECTION ############ */
 
 #current-series {
     background-color: $main;
     color: $light;
+
+    p {
+        padding: 0.25rem 1.25rem;
+        background-color: $primary;
+        top: 0;
+        left: 0;
+        transform: translate( 0%, -50%);
+    }
+
+    img {
+        min-height: 200px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: top;
+    }
 }
 
 #link {
@@ -55,7 +70,7 @@ div.fs-5 {
     color: $light;
 }
 
-/* FOOTER SECTION */
+/* ############ FOOTER SECTION ############ */
 
 #footer-top {
     background-image: url(../img/footer-bg.jpg);

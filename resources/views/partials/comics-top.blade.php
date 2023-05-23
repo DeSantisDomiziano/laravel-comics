@@ -13,5 +13,9 @@
             </div>
             @endforeach
         </div>
+
+        <div class="text-center">
+            <button class="text-uppercase d-inline-block m-0">load more</button>
+        </div>
     </div>
 </section>

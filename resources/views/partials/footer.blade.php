@@ -48,13 +48,13 @@
                             </ul>
                         </div>
                     </div>
-
+                    
+                <p class="m-0">
+                    All Site Content TM and &#169; 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved. <br> <a href="#">Cookies Settings</a>
+                </p>
                 </div>
                 <div class="col-6" id="logo"></div>
 
-                <p>
-                    All Site Content TM and &#169; 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved. <br> <a href="#">Cookies Settings</a>
-                </p>
             </div>
         </div>
     </section> 

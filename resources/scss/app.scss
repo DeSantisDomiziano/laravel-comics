@@ -1,6 +1,8 @@
 @use './partials/variables' as *;
 @import '~bootstrap/scss/bootstrap';
 
+/* provare a fare i partials per pulire un po  */
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -75,6 +77,23 @@ div.fs-5 {
 #link {
     background-color: $primary;
     color: $light;
+
+    img,
+    #svg {
+        max-width: 50px;
+        aspect-ratio: 1;
+        object-fit: contain;
+    }
+
+    #svg {
+        height: 50px;
+        vertical-align: sub;
+        line-height: 3;
+    }
+
+    #svg + p {
+        vertical-align: sub;
+    }
 }
 
 /* ############ FOOTER SECTION ############ */

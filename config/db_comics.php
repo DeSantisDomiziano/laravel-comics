@@ -274,5 +274,13 @@ return [
         "footer-pinterest.png",
         "footer-periscope.png",
     ],
+
+    "info" => [
+        "digital comics" => "buy-comics-digital-comics.png",
+        "dc merchandise" => "buy-comics-merchandise.png",
+        "subscription" => "buy-comics-subscriptions.png",
+        "comic shop locator" => "buy-comics-shop-locator.png",
+        "dc power visa" => "buy-dc-power-visa.svg",
+      ]
 ];
 

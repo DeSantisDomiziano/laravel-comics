@@ -24,6 +24,7 @@ Route::get('/', function () {
             "dc" => config('db_comics.dc'),
             "sites" => config('db_comics.sites'),
             "socials" => config('db_comics.socials'),
+            "info" => config('db_comics.info'),
         ]
       ];
 

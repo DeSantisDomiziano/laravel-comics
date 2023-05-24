@@ -9,21 +9,11 @@
                 <div class="col-auto">
                     <p href="#" class="text-uppercase m-0 text-primary d-inline-block">follow us</p>
 
+                    @foreach( $keys['socials'] as $social)
                     <a href="#">
-                        <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/img/' . $social) }}" alt="">
                     </a>
-                    <a href="#">
-                        <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="">
-                    </a>
+                    @endforeach
                 </div>
             </div>
         </div>
